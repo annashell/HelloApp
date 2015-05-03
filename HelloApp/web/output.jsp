@@ -12,7 +12,7 @@
         <title>Thank you!</title>
     </head>
     <body>
-        <% if(request.getParameter("fullName")=="") { %>
+        <% if(request.getParameter("fullName").isEmpty()) { %>
         <FORM METHOD="GET" action="index.html">
             <div>You haven't entered your name, try again!</div>
             <input type="submit" value="ok"/>
